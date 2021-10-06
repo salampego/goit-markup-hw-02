@@ -10,6 +10,7 @@
   --logo-basic: #2196f3;
   --logo-header: #212121;
   --logo-footer: #ffffff;
+  --contact-footer: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -141,7 +142,7 @@ body {
 }
 .contact-footer {
   font-family: Roboto;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contact-footer);
   font-size: 14px;
   line-height: 1.71;
 }
