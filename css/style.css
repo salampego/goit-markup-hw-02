@@ -1,4 +1,5 @@
-/* color */
+/*index.html (css) */
+/* color  */
 :root {
   --header-nav: #212121;
   --header-nav-hover: #2196f3;
@@ -15,7 +16,7 @@
 
 body {
   font-family: Roboto, serif;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.3px;
 }
 .header {
   background-color: #ffffff;
@@ -90,7 +91,6 @@ body {
 .features {
   background-color: #e5e5e5;
   font-size: 14px;
-  letter-spacing: 0.03em;
 }
 .features-heading {
   color: var(--heading-color);
@@ -115,7 +115,6 @@ body {
 /* about team */
 .team {
   background-color: #f5f4fa;
-  letter-spacing: 0.03em;
 }
 .team-heading {
   font-weight: 700;
@@ -137,7 +136,6 @@ body {
 }
 /* */
 .footer {
-  letter-spacing: 0.03em;
   background-color: #2f303a;
 }
 .contact-footer {
@@ -149,4 +147,37 @@ body {
 .footer-address {
   color: #ffffff;
   font-family: Roboto;
+}
+/* portfolio.html (css)*/
+:root {
+  --portfolio-button: #f5f4fa;
+  --portfolio-button-hover: #2196f3;
+}
+.portfolio {
+  background: #e5e5e5;
+}
+.portfolio .portfolio-button {
+  background-color: var(--portfolio-button);
+  color: var(--heading-color);
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--portfolio-button-hover);
+  color: var(--portfolio-button);
+}
+.portfolio-heading {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-paragraph {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--paragraph-color);
 }
