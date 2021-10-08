@@ -40,13 +40,15 @@ body {
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 /*logo in header and footer   */
 .logo {
   font-family: raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
   color: var(--logo-basic);
 }
 .logo .header-logo {
@@ -56,15 +58,14 @@ body {
   color: var(--logo-footer);
 }
 /* link nav*/
-.link {
+.navigation-link {
   color: var(--header-nav);
-  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
-.link:hover,
-.link:focus {
+.navigation-link:hover,
+.navigation-link:focus {
   color: var(--header-nav-hover);
 }
 /* contact header*/
@@ -120,7 +121,6 @@ body {
   background-color: #e5e5e5;
 }
 .work-heading {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -153,14 +153,12 @@ body {
   background-color: #2f303a;
 }
 .contact-footer {
-  font-family: Roboto;
   color: var(--contact-footer);
   font-size: 14px;
   line-height: 1.71;
 }
 .footer-address {
   color: #ffffff;
-  font-family: Roboto;
 }
 /* portfolio.html (css)*/
 :root {
