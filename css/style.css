@@ -11,7 +11,13 @@
   --logo-basic: #2196f3;
   --logo-header: #212121;
   --logo-footer: #ffffff;
+  --background-hero: #2f303a;
   --contact-footer: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --portfolio-button: #f5f4fa;
+  --portfolio-button-hover: #2196f3;
+  --background-team: #f5f4fa;
+  --background-footer: #2f303a;
 }
 
 body {
@@ -32,7 +38,7 @@ body {
 }
 
 .header {
-  background-color: #ffffff;
+  background-color: var(--logo-footer);
   letter-spacing: 0.02em;
 }
 
@@ -68,6 +74,9 @@ body {
 .navigation-link:focus {
   color: var(--header-nav-hover);
 }
+.current-nav-link {
+  color: var(--accent-color);
+}
 /* contact header*/
 .contact-header {
   color: var(--contact-);
@@ -82,8 +91,7 @@ body {
 }
 /* hero */
 .hero {
-  background-color: #2f303a;
-  text-align: center;
+  background-color: var(--background-hero);
   letter-spacing: 0.06em;
 }
 .hero-heading {
@@ -93,7 +101,7 @@ body {
   line-height: 1.36;
 }
 .hero .hero-button {
-  background: #2196f3;
+  background: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -104,7 +112,6 @@ body {
 }
 /* features */
 .features {
-  background-color: #e5e5e5;
   font-size: 14px;
 }
 .features-heading {
@@ -118,7 +125,6 @@ body {
 }
 /* about work */
 .work {
-  background-color: #e5e5e5;
 }
 .work-heading {
   font-weight: 700;
@@ -128,7 +134,7 @@ body {
 }
 /* about team */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-team);
 }
 .team-heading {
   font-weight: 700;
@@ -150,23 +156,20 @@ body {
 }
 /* */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-footer);
 }
 .contact-footer {
   color: var(--contact-footer);
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
 }
 .footer-address {
   color: #ffffff;
 }
 /* portfolio.html (css)*/
-:root {
-  --portfolio-button: #f5f4fa;
-  --portfolio-button-hover: #2196f3;
-}
+
 .portfolio {
-  background: #e5e5e5;
 }
 .portfolio .portfolio-button {
   background-color: var(--portfolio-button);
@@ -175,6 +178,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  cursor: pointer;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
